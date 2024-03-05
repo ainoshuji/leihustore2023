@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furry商品競標</title>
+    <meta name="keywords" content="Furry、獸迷、毛茸茸、獸人、不定期、限時競標網站">
+    <meta name="description" content="Furry、獸迷、它屬於限時競標、不定期的活動、商品競標的Taiwan網站">
+    <meta property="og:title" content="Furry商品競標活動網">
+    <meta property="og:description" content="Furry、獸迷、它屬於限時競標、不定期的活動、自製些雜七雜八商品來競標的Taiwan網站">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header style2 navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                <div class="nav-inner">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo/logo.svg" alt="Logo">
+                        </a>
+                    </nav> <!-- navbar -->
+                </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+
+
+    <!-- Start Contact Area -->
+    <section id="contact-us" class="contact-us section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="course-instructor">
+                        <div class="col-12">
+                            <div class="profile-image">
+                                <img id="Html_Bidding_Image01" src="https://fakeimg.pl/500x500" >
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="profile-info">
+                                <h5 id="Html_Bidding_Title"><a href="javascript:void(0)">競標商品</a></h5>
+                                <p id="Html_Bidding_Content" >競標內容介紹。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="form-main" >
+                        <h5 class="title">目前第一順位競標者</h5>
+
+                        <h5 id="html_lastName_max"><a href="javascript:void(0)">競標者暱稱</a></h5>
+                        <p id="html_bid_amount_max" >NT$&nbsp;0</p>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="form-main" id="Html_Activity">
+                        <h3 class="title">表單</h3>
+
+                        <form class="form" id="Form1" name="Form1">
+                            <input type="hidden" id="Min_Bid_Amount" name="Min_Bid_Amount" value="" />
+                            <input type="hidden" id="Html_Date_End" name="Html_Date_End" value="" />
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>競標第一順位顯示暱稱方式</label>
+                                        <select class="form-select" id="nickname" name="nickname" required>
+                                          <option value="1" >公開暱稱</option>
+                                          <option value="2" selected >隱藏部分暱稱</option>
+                                          <option value="3" >完全隱藏暱稱</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>暱稱</label>
+                                        <input type="text" id="lastName" name="lastName" placeholder="請輸入暱稱" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" id="email" name="email" placeholder="you@gmail.com" placeholder="" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="form-group">
+                                        <label>競標金額</label>
+                                        <input type="text" id="bid_amount" name="bid_amount" placeholder="請輸入競標金額"required="required">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group button">
+                                        <input type="button" class="w-100 btn btn-primary btn-lg" id="button_click" name="button_click" value="送出表單" onclick="From_Button();" > 
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--/ End Contact Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer style2">
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="inner">
+                    <p>By</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Middle -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= JS here ========================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--javascript 自訂義-->
+    <!-- <script src="assets/js/blockUI.js"></script> -->
+    <script src="assets/js/ajax_setting.js"></script>
+</body>
+
+</html>
